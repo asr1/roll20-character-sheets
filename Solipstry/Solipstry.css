@@ -11,6 +11,18 @@ h3 {
     margin-bottom: 5px;
 }
 
+.sheet-roll-button { display: none; }
+
+.sheet-show-prompts:checked ~ .sheet-prompt,
+.sheet-hide-prompts:checked ~ .sheet-no-prompt
+{
+    display: block;
+}
+
+
+
+
+
 h4 {
    color:white;
    border-radius: 25px;
@@ -34,7 +46,10 @@ th{
     margin-right:5px;
 }
 
-
+input[type="radio"] {
+  margin-right: 5px;
+  float:left;
+}
 
 
 input.sheet-inline { display:inline; }

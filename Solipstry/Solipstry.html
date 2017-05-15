@@ -2,10 +2,18 @@
 		<img src="https://i.imgur.com/hL3gl9B.png" style="max-height: 300px;" />
     </p>
 
+
+<div class="sheet-col" style="display:inline;">
+    <input type="radio" class="sheet-show-prompts" name="prompt" style="float-left;"  value="true" checked><label>Enable Prompts</label>
+    <input type="radio" class="sheet-hide-prompts" name="prompt" style="float-left; margin-right:5px;" value="false"><label>Disable Prompts</label>
+</div>
 <!--Background information-->
 <h3>Background</h3>    
 <div class='sheet-3colrow'>
     <div class='sheet-col'>
+        
+
+        
         <div class="sheet-left-attr">
                 <label class="sheet-inline" name="attr_char_name_label">Name</label>
         </div>
@@ -1166,6 +1174,10 @@
 <!--Scripts-->
 
 <script type="text/worker">
+
+
+
+
 
 //Attributes change
  on("change:strength change:constitution change:dexterity change:intelligence change:wisdom change:charisma change:speed change:luck change:repeating_attribute:custom_att_score change:hp_misc change:abil_misc change:abil_regen_misc change:fortune_misc change:movement_misc change:init_misc", function() {
